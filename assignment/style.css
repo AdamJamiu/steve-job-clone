@@ -5,6 +5,9 @@ FORK ME ON GITHUB
 AND OTHER!!!!!!!!!
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -13,24 +16,77 @@ AND OTHER!!!!!!!!!
 body{
     background-color: black;
     color: white;
+    font-family: 'Montserrat', sans-serif;
 
    
 }
 header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-top: 150px ;
     font-size: 30px;
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 h6{
-    margin-bottom: 20px;
+    
     font-size: 30px ;
 }
-header >p{
-    font-size: 16px;
-}
-.icon{
-    
 
+i{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 1%;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 5em;
+}
+
+ .date{
+    font-size: 19px;
+    word-spacing: 4px;
+}
+
+i:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.bio-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6em;
+    padding-bottom: 10em;
+    padding-right: 10em;
+    padding-left: 10em;
+}
+
+.bio-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    border-bottom: 2px solid white;
+    padding-bottom: 5em;
+}
+
+.bio{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.bio-txt{
+    line-height: 1.8;
+    letter-spacing: 2;
+    word-spacing: 2px;
+    font-size: 18px;
+    text-align: left;
 }
 .container{
     background-color: white;
@@ -52,25 +108,16 @@ img{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 15em;
 }
-section{
-        text-align: justify;
-        width: 30%;
-        margin-left: 600px;
-        margin-top: 50px;
-}
+
+
 h4{
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 20px;   
 }
-hr{
-    margin-top: 50px;
-    width: 80%;
-    margin-left: 150px;
-}
+
 footer{
-    text-align: center !important;
-    margin-top: 30px;
+    text-align: center;
     margin-bottom: 30px;
 }
 a{
@@ -85,42 +132,35 @@ a:hover{
 }
 
 /* media queries */
+@media only screen and (max-width: 1000px) {
 
-@media(max-width: 768px){
-        header{
-            margin-top: 40px;
-            font-size: 30px;
+    .bio-container{
+        padding-right: 5em;
+        padding-left: 5em;
+    }
 
-        }
-        .container{
-            height: 300px;
-            width: 100%;
-        }
-        img{
-            width: 60%;
-            height: 400px !important;
-            margin-top: -212px !important;
-        }
-        .first{
-            margin-top: 50px;
-            width: 30%;
-            font-size: 18px;
-            margin-left: 70px !important;
-        }
-        section{
-            text-align: justify;
-            width: 40% !important;
-            margin-left: 200px !important;
-            margin-top: 80px;
-        }
-        h4{
-        font-size: 20px;
-        margin-bottom: 20px;
-        }
-        hr{
-        margin-top: 80px;
-        width: 80%;
-        margin-left: 80px !important;
-        }
+    .bio-wrap{
+        width: 90%;
+    }
+
+    img{
+        width: 30%;
+    }
+
+} 
+
+
+@media only screen and (max-width: 750px) {
+
+    .wrap{
+        flex-direction: column;
+        gap: 5em;
+        padding-top: 4em;
+    }
+
+    img{
+        width: 50%;
+        height: auto;
+    }
+
 }
-
