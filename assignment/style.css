@@ -10,46 +10,48 @@ AND OTHER!!!!!!!!!
     padding: 0;
 }
 
-Body{
+body{
     background-color: black;
     color: white;
-    width: 100%;
-    height: 1600px;
+
+   
 }
 header{
-    text-align: center !important;
-    margin-top: 150px !important;
+    text-align: center;
+    margin-top: 150px ;
     font-size: 30px;
 }
 h6{
     margin-bottom: 20px;
-    font-size: 30px !important;
+    font-size: 30px ;
 }
 header >p{
-    font-size: 16px !important;
+    font-size: 16px;
 }
 .icon{
-    margin-top: 50px !important;
-    margin-bottom: 50px !important;
+    
+
 }
 .container{
     background-color: white;
-    color: black;
-    height: 600px !important;
-    width: 100%;
-    padding-top: 100px;
+    
 }
 img{
-    width: 50%;
-    height: 81vh !important;
-    float: right;
-    margin-top: -283px !important;
+    
 }
 .first{
-    margin-top: 120px;
-    width: 13%;
-    font-size: 18px;
-    margin-left: 350px;
+   color: black;
+   font-size: 20px;
+    width: 12rem;
+    line-height: 1.8;
+    word-spacing: 1px;
+}
+
+.wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 section{
         text-align: justify;
@@ -122,48 +124,3 @@ a:hover{
         }
 }
 
-@media(min-width: 428px){
-    header{
-        margin-top: 30px !important;
-    }
-    h6{
-        font-size: 20px !important;
-        margin-bottom: 10px !important;
-    }
-    header >p{
-        font-size: 16px !important;
-    }
-    .icon{
-        margin-top: 30px !important;
-        margin-bottom: 20px !important;
-    }
-    .container{
-        height: 120px !important;
-    }
-    .first{
-        margin-top: -20px !important;
-        font-size: 15px !important;
-    }
-    img{
-        width: 50% !important;
-        height: 220px !important;
-        margin-top: -148px !important;
-    }
-    section{
-        width: 50% !important;
-        margin-left: 100px !important;
-        font-size: 12px !important;
-        margin-top: 10px !important;
-    }
-    section >p{
-        margin-top: 5px !important;
-    }
-    hr{
-        margin-top: 5px !important;
-        margin-left: 40px !important;
-    }
-    footer{
-        margin-top: 10px !important;
-    }
-    
-}
